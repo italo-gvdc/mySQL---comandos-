@@ -58,3 +58,16 @@ SELECT id_curso, resumo, ativo, carga_horaria, data_cadastro, imagem_curso, inve
 SELECT id_curso, resumo FROM tb_cursos;
 
 SELECT * FROM tb_cursos;
+
+//------------------------
+
+POPULANDO O BANCO DE DADOS COM REGISTRO PARA TESTE:
+
+CREATE TABLE tb_alunos (
+  id_aluno int,
+  nome varchar(255) default NULL,
+  idade int default NULL,
+  interesse varchar(255) default NULL,
+  email varchar(255) default NULL,
+  estado varchar(255) default NULL
+);
