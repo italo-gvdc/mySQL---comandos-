@@ -141,3 +141,17 @@ SELECT * FROM `tb_alunos` WHERE idade BETWEEN 18 AND 59 ORDER BY nome ASC;
 SELECT * FROM `tb_alunos` WHERE idade BETWEEN 18 AND 59 ORDER BY nome DESC;
 
 SELECT * FROM `tb_alunos` WHERE idade BETWEEN 18 AND 59 ORDER BY nome ASC, idade DESC, estado ASC;
+
+//------------------------
+
+SELECT - LIMITANDO RETORNO:
+
+SELECT * FROM `tb_alunos` LIMIT 25;
+
+SELECT * FROM `tb_alunos` ORDER BY id_aluno DESC LIMIT 25;
+
+SELECT * FROM `tb_alunos` LIMIT 4 OFFSET 0;
+
+SELECT * FROM `tb_alunos` LIMIT 4 OFFSET 4;
+
+SELECT * FROM `tb_alunos` LIMIT 4 OFFSET 8;
