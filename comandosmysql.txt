@@ -155,3 +155,18 @@ SELECT * FROM `tb_alunos` LIMIT 4 OFFSET 0;
 SELECT * FROM `tb_alunos` LIMIT 4 OFFSET 4;
 
 SELECT * FROM `tb_alunos` LIMIT 4 OFFSET 8;
+
+//------------------------
+
+SELECT - FUNÇÕES DE AGREGAÇÃO PARTE 1; MAX, MIN, AVG:
+
+SELECT MIN(investimento) FROM `tb_cursos`;
+
+
+SELECT MIN(investimento) FROM `tb_cursos` WHERE ativo = true;
+
+
+SELECT MAX(investimento) FROM `tb_cursos` WHERE ativo = true;
+
+
+SELECT AVG(investimento) FROM `tb_cursos` WHERE ativo = true;
