@@ -262,3 +262,13 @@ UPDATE tb_alunos SET nome = 'José', idade = 25, email = 'jose@gmail.com' WHERE 
 
 
 SELECT * FROM `tb_alunos` WHERE idade BETWEEN 18 AND 25 AND estado = 'PA';
+
+//------------------------
+
+DELETE - EXCLUINDO REGISTROS: 
+
+DELETE FROM tb_alunos WHERE id_aluno = 5;
+
+SELECT * FROM `tb_alunos` WHERE idade IN(10,18,22,28,34) AND interesse = 'Esporte';
+
+DELETE FROM `tb_alunos` WHERE idade IN(10,18,22,28,34) AND interesse = 'Esporte';
