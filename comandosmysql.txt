@@ -272,3 +272,22 @@ DELETE FROM tb_alunos WHERE id_aluno = 5;
 SELECT * FROM `tb_alunos` WHERE idade IN(10,18,22,28,34) AND interesse = 'Esporte';
 
 DELETE FROM `tb_alunos` WHERE idade IN(10,18,22,28,34) AND interesse = 'Esporte';
+
+//------------------------
+
+PROJETO LOJA VIRTUAL -RELACIONAMENTO UM PARA UM :
+
+CREATE DATABASE bd_loja_virtual;
+
+CREATE TABLE tb_produtos(
+	id_produto INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	produto VARCHAR(200) NOT NULL,
+	valor FLOAT(8,2) NOT NULL
+);
+
+CREATE TABLE tb_descricoes_tecnicas(
+	id_descricao_tecnica INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	id_produto INT NOT NULL,
+	descricao_tecnica TEXT NOT NULL,
+	FOREIGN KEY(id_produto) REFERENCES tb_produtos(id_produto)
+);
