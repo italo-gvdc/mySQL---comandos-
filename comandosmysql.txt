@@ -392,9 +392,17 @@ AS JUNÇÕES PERMITE CONECTAR REGISTROS DE TABELAS DIFERENTES
 AS PRINCIPAIS JUNÇÕES SÃO :  LEFT JOIN(junção a esquerda), RIGHT JOIN(junção a direita) E INNER JOIN(junção interna)
 
 
-JOIN A ESQUERDA - JUNÇÂO A ESQUERDA (LEFT JOIN) :
+JOIN A ESQUERDA - JUNÇÃO A ESQUERDA (LEFT JOIN) :
 
 SELECT * FROM tb_clientes LEFT JOIN tb_pedidos ON (tb_clientes.id_cliente = tb_pedidos.id_cliente);
 SELECT * FROM tb_produtos LEFT JOIN tb_imagens ON (tb_produtos.id_produto = tb_imagens.id_produto);
 
 LEFT JOIN : RELACIONA TODOS OS REGISTROS DA TABELA A ESQUERDA + CASO EXISTA *TODOS* OS REGISTROS DA TABELA A DIREITA. 
+
+//------------------------
+
+JOIN A DIREITA - JUNÇÃO A DIREITA (RIGHT JOIN) :
+
+SELECT * FROM tb_clientes LEFT JOIN tb_pedidos ON(tb_clientes.id_cliente = tb_pedidos.id_cliente);
+
+SELECT * FROM tb_clientes RIGHT JOIN tb_pedidos ON(tb_clientes.id_cliente = tb_pedidos.id_cliente);
